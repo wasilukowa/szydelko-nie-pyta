@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8d8d8;
+  font-family: 'Georgia', serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+img {
+  width: min(400px, 80vw);
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socials a {
+  color: #5a3e2b;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #5a3e2b;
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.socials a:hover {
+  opacity: 0.6;
+}
