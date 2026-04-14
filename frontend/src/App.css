@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #d8d8d8;
+  background-color: #000;
   font-family: 'Georgia', serif;
 }
 
@@ -20,6 +20,7 @@ main {
 
 img {
   width: min(400px, 80vw);
+  filter: brightness(0) invert(1);
 }
 
 .socials {
@@ -28,11 +29,11 @@ img {
 }
 
 .socials a {
-  color: #5a3e2b;
+  color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid #5a3e2b;
+  border-bottom: 1px solid #fff;
   padding-bottom: 2px;
   transition: opacity 0.2s;
 }
