@@ -26,8 +26,10 @@ jobs:
         run: npm run build
 
       - name: Deploy via FTP
-        env:
-          FTP_HOST: ${{ secrets.FTP_HOST }}
-          FTP_USER: ${{ secrets.FTP_USER }}
-          FTP_PASS: ${{ secrets.FTP_PASS }}
-        run: python .github/scripts/ftp_deploy.py
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: frontend/dist/
+          server-dir: /public_html/
