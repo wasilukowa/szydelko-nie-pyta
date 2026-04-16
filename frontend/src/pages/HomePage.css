@@ -1,0 +1,43 @@
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home__coming-soon {
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+
+.home__ellipsis {
+  color: #555;
+}
+
+.home__socials {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.home__socials a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.home__socials a:hover {
+  opacity: 0.6;
+}

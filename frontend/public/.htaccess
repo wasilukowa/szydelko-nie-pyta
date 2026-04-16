@@ -1,0 +1,20 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# WordPress - admin, login, API, pliki systemowe
+RewriteRule ^wp-admin(/.*)?$ - [L]
+RewriteRule ^wp-login\.php$ - [L]
+RewriteRule ^wp-cron\.php$ - [L]
+RewriteRule ^wp-json(/.*)?$ - [L]
+RewriteRule ^wp-content(/.*)?$ - [L]
+RewriteRule ^wp-includes(/.*)?$ - [L]
+RewriteRule ^xmlrpc\.php$ - [L]
+
+# Istniejące pliki i katalogi serwuj bezpośrednio (pliki React, obrazki itp.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Wszystko inne → React SPA
+RewriteRule ^ index.html [L]

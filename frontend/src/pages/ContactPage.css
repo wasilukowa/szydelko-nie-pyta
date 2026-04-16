@@ -1,0 +1,44 @@
+.contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__text {
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.contact__smile {
+  color: #888;
+}
+
+.contact__sub {
+  color: #aaa;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact__sub a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.contact__sub a:hover {
+  opacity: 0.6;
+}
