@@ -26,18 +26,8 @@ jobs:
         run: npm run build
 
       - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          protocol: ftp
-          local-dir: frontend/dist/
-          server-dir: /
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/wp-*
-            **/wp-content/**
-            **/wp-includes/**
+        run: |
+          sudo apt-get install -y lftp
+          lftp -e "set ftp:ssl-allow no; set net:timeout 30; set net:max-retries 3; mirror -R --delete --exclude .git --exclude node_modules frontend/dist/ /; bye" \
+            -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" \
+            ${{ secrets.FTP_HOST }}
