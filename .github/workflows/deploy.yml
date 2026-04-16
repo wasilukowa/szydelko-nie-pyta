@@ -28,6 +28,6 @@ jobs:
       - name: Deploy via FTP
         run: |
           sudo apt-get install -y lftp
-          lftp -d -e "set ftp:ssl-allow no; set ftp:passive-mode true; set ftp:prefer-epsv false; set net:timeout 30; set net:max-retries 1; ls /public_html/; bye" \
+          lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; set ftp:prefer-epsv false; set net:timeout 30; set net:max-retries 3; mirror -R --delete --exclude .git --exclude node_modules frontend/dist/ /public_html/; bye" \
             -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" \
-            ${{ secrets.FTP_HOST }} 2>&1 || true
+            ${{ secrets.FTP_HOST }}
