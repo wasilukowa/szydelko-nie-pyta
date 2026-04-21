@@ -1,5 +1,9 @@
 Options -Indexes
 
+<IfModule Litespeed>
+  CacheLookup off
+</IfModule>
+
 # index.html nigdy nie cachować (React SPA - zawsze świeży)
 <FilesMatch "index\.html$">
   Header always set X-LiteSpeed-Cache-Control "no-cache"
