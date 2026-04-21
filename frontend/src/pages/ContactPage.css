@@ -13,7 +13,7 @@
 
 .contact__text {
   color: #1e1c1a;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: normal;
   line-height: 1.5;
@@ -26,7 +26,7 @@
 
 .contact__sub {
   color: #7a7876;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.8;
 }

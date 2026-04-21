@@ -62,7 +62,7 @@
 .product-card__name {
   color: #1e1c1a;
   text-decoration: none;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.4;
 }
@@ -97,7 +97,7 @@
   background: transparent;
   border: 1px solid #1e1c1a;
   color: #1e1c1a;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   cursor: pointer;

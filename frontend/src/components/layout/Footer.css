@@ -33,7 +33,7 @@
 
 .footer__col-title {
   color: #1e1c1a;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 0.75rem;
   font-weight: normal;
   letter-spacing: 0.1em;
@@ -44,7 +44,7 @@
 .footer__col p,
 .footer__col-item--disabled {
   color: #b5b3b0;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 0.85rem;
   line-height: 1.6;
 }
@@ -52,7 +52,7 @@
 .footer__col-link {
   color: #9a9896;
   text-decoration: none;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 0.85rem;
   line-height: 1.6;
   transition: color 0.2s;

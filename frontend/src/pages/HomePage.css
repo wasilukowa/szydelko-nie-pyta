@@ -11,7 +11,7 @@
 
 .home__coming-soon {
   color: #1e1c1a;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-weight: normal;
   letter-spacing: 0.2em;
@@ -30,7 +30,7 @@
 .home__socials a {
   color: #1e1c1a;
   text-decoration: none;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05em;
   border-bottom: 1px solid #1e1c1a;

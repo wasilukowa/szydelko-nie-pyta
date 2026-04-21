@@ -12,13 +12,13 @@
   justify-content: center;
   gap: 1.5rem;
   color: #9a9896;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 1.1rem;
 }
 
 .cart__title {
   color: #1e1c1a;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   margin-bottom: 2rem;
@@ -86,7 +86,7 @@
 .cart-item__name {
   color: #1e1c1a;
   text-decoration: none;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 0.95rem;
 }
 
@@ -127,7 +127,7 @@
   color: #1e1c1a;
   min-width: 20px;
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
 }
 
 .cart-item__subtotal {
@@ -162,7 +162,7 @@
 
 .cart__summary-title {
   color: #1e1c1a;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 1.1rem;
   font-weight: normal;
   letter-spacing: 0.05em;
@@ -206,7 +206,7 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05em;
   transition: opacity 0.2s;
@@ -222,7 +222,7 @@
   text-align: center;
   color: #9a9896;
   text-decoration: none;
-  font-family: 'Georgia', serif;
+  font-family: 'Raleway', system-ui, sans-serif;
   font-size: 0.85rem;
   transition: color 0.2s;
 }
