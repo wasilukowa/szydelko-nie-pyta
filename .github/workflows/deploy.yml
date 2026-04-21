@@ -40,6 +40,6 @@ jobs:
           set net:max-retries 3
           set xfer:clobber on
           open -u "$SFTP_USER","$SFTP_PASS" sftp://$SFTP_HOST:222
-          mirror -R --delete --transfer-all --no-perms --parallel=2 frontend/dist/ /public_html/
+          mirror -R --delete --transfer-all --no-perms --parallel=2 frontend/dist/ public_html/
           bye
           EOF
