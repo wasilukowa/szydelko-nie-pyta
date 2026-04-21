@@ -12,7 +12,7 @@
 }
 
 .contact__text {
-  color: #fff;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: normal;
@@ -21,24 +21,24 @@
 }
 
 .contact__smile {
-  color: #888;
+  color: #c5c3c0;
 }
 
 .contact__sub {
-  color: #aaa;
+  color: #7a7876;
   font-family: 'Georgia', serif;
   font-size: 1rem;
   line-height: 1.8;
 }
 
 .contact__sub a {
-  color: #fff;
+  color: #1e1c1a;
   text-decoration: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #1e1c1a;
   padding-bottom: 1px;
   transition: opacity 0.2s;
 }
 
 .contact__sub a:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }

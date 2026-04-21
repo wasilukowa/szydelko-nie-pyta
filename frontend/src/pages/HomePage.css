@@ -10,7 +10,7 @@
 }
 
 .home__coming-soon {
-  color: #fff;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-weight: normal;
@@ -18,7 +18,7 @@
 }
 
 .home__ellipsis {
-  color: #555;
+  color: #c5c3c0;
 }
 
 .home__socials {
@@ -28,16 +28,16 @@
 }
 
 .home__socials a {
-  color: #fff;
+  color: #1e1c1a;
   text-decoration: none;
   font-family: 'Georgia', serif;
   font-size: 1rem;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #1e1c1a;
   padding-bottom: 2px;
   transition: opacity 0.2s;
 }
 
 .home__socials a:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }

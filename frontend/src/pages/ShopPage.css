@@ -15,7 +15,7 @@
 }
 
 .shop__title {
-  color: #fff;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: 2rem;
   font-weight: normal;
@@ -29,10 +29,10 @@
 
 .shop__search-input {
   padding: 0.5rem 1rem;
-  background: #111;
-  border: 1px solid #333;
+  background: #fff;
+  border: 1px solid #e5e3e0;
   border-right: none;
-  color: #fff;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: 0.9rem;
   outline: none;
@@ -40,14 +40,14 @@
 }
 
 .shop__search-input:focus {
-  border-color: #666;
+  border-color: #9a9896;
 }
 
 .shop__search-btn {
   padding: 0.5rem 1rem;
   background: transparent;
-  border: 1px solid #333;
-  color: #fff;
+  border: 1px solid #e5e3e0;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: 0.9rem;
   cursor: pointer;
@@ -55,7 +55,7 @@
 }
 
 .shop__search-btn:hover {
-  background: #222;
+  background: #f0eeed;
 }
 
 .shop__grid {
@@ -74,7 +74,7 @@
 }
 
 .shop__loading {
-  color: #888;
+  color: #9a9896;
 }
 
 .shop__error {
@@ -82,5 +82,5 @@
 }
 
 .shop__empty {
-  color: #666;
+  color: #b5b3b0;
 }

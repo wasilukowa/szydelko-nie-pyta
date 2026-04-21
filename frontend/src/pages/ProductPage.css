@@ -9,13 +9,13 @@
 .product-page__error {
   text-align: center;
   padding: 4rem;
-  color: #888;
+  color: #9a9896;
   font-family: 'Georgia', serif;
 }
 
 .product-page__back {
   display: inline-block;
-  color: #888;
+  color: #9a9896;
   text-decoration: none;
   font-family: 'Georgia', serif;
   font-size: 0.9rem;
@@ -24,7 +24,7 @@
 }
 
 .product-page__back:hover {
-  color: #fff;
+  color: #1e1c1a;
 }
 
 .product-page__layout {
@@ -41,7 +41,7 @@
 
 .product-page__main-image {
   aspect-ratio: 1;
-  background: #111;
+  background: #f0eeed;
   overflow: hidden;
 }
 
@@ -70,15 +70,15 @@
 .product-page__thumb {
   width: 70px;
   height: 70px;
-  background: #111;
-  border: 1px solid #333;
+  background: #f0eeed;
+  border: 1px solid #e0dedd;
   cursor: pointer;
   overflow: hidden;
   padding: 0;
 }
 
 .product-page__thumb--active {
-  border-color: #fff;
+  border-color: #1e1c1a;
 }
 
 .product-page__thumb img {
@@ -88,7 +88,7 @@
 }
 
 .product-page__name {
-  color: #fff;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: 1.8rem;
   font-weight: normal;
@@ -104,19 +104,19 @@
 }
 
 .product-page__price--old {
-  color: #666;
+  color: #b5b3b0;
   font-size: 1rem;
   text-decoration: line-through;
 }
 
 .product-page__price--current {
-  color: #fff;
+  color: #1e1c1a;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 .product-page__short-desc {
-  color: #aaa;
+  color: #7a7876;
   font-family: 'Georgia', serif;
   font-size: 0.95rem;
   line-height: 1.7;
@@ -130,15 +130,15 @@
   text-transform: uppercase;
 }
 
-.product-page__stock--in { color: #6aaa6a; }
+.product-page__stock--in { color: #5a9a5a; }
 .product-page__stock--out { color: #aa6a6a; }
 
 .product-page__btn {
   width: 100%;
   padding: 1rem;
   background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #1e1c1a;
+  color: #1e1c1a;
   font-family: 'Georgia', serif;
   font-size: 1rem;
   letter-spacing: 0.05em;
@@ -148,32 +148,32 @@
 }
 
 .product-page__btn:hover:not(:disabled) {
-  background: #fff;
-  color: #000;
+  background: #1e1c1a;
+  color: #fff;
 }
 
 .product-page__btn--added {
-  background: #fff;
-  color: #000;
+  background: #1e1c1a;
+  color: #fff;
 }
 
 .product-page__btn:disabled {
-  border-color: #444;
-  color: #444;
+  border-color: #d5d3d0;
+  color: #d5d3d0;
   cursor: not-allowed;
 }
 
 .product-page__desc {
-  border-top: 1px solid #222;
+  border-top: 1px solid #e5e3e0;
   padding-top: 1.5rem;
-  color: #aaa;
+  color: #7a7876;
   font-family: 'Georgia', serif;
   font-size: 0.95rem;
   line-height: 1.7;
 }
 
 .product-page__desc h2 {
-  color: #fff;
+  color: #1e1c1a;
   font-size: 1rem;
   font-weight: normal;
   letter-spacing: 0.05em;
