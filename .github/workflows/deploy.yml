@@ -36,11 +36,12 @@ jobs:
         run: |
           lftp -c "
             set ftp:passive-mode yes
+            set ftp:nat-workaround yes
             set ssl:verify-certificate no
             set net:timeout 15
             set net:max-retries 3
+            set xfer:clobber on
             open -u '$FTP_USER','$FTP_PASS' ftp://$FTP_HOST
             mirror -R --delete --transfer-all --no-perms --parallel=1 frontend/dist/ /public_html/
-            put frontend/dist/index.html -o /public_html/index.html
             bye
           "
