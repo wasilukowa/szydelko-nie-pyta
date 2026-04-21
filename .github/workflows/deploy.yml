@@ -40,6 +40,6 @@ jobs:
             set net:timeout 15
             set net:max-retries 3
             open -u '$FTP_USER','$FTP_PASS' ftp://$FTP_HOST
-            mirror -R --delete --no-perms --parallel=1 frontend/dist/ /public_html/
+            mirror -R --delete --overwrite --no-perms --parallel=1 frontend/dist/ /public_html/
             bye
           "
