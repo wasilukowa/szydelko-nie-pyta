@@ -4,7 +4,6 @@ Options -Indexes
   CacheLookup off
 </IfModule>
 
-# index.html nigdy nie cachować (React SPA - zawsze świeży)
 <FilesMatch "index\.html$">
   Header always set X-LiteSpeed-Cache-Control "no-cache"
   Header always set Cache-Control "no-cache, no-store, must-revalidate"
@@ -15,16 +14,8 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
-# WordPress - admin, login, API, pliki systemowe
-RewriteRule ^wp-admin(/.*)?$ - [L]
-RewriteRule ^wp-login\.php$ - [L]
-RewriteRule ^wp-cron\.php$ - [L]
-RewriteRule ^wp-json(/.*)?$ - [L]
-RewriteRule ^wp-content(/.*)?$ - [L]
-RewriteRule ^wp-includes(/.*)?$ - [L]
-RewriteRule ^xmlrpc\.php$ - [L]
-
-# Istniejące pliki i katalogi serwuj bezpośrednio (pliki React, obrazki itp.)
+# Istniejące pliki i katalogi serwuj bezpośrednio
+# (pliki React, obrazki, katalog /sklep/ z WordPressem)
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]

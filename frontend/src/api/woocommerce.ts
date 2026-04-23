@@ -1,6 +1,6 @@
 import type { Product } from '../types/product';
 
-const BASE_URL = import.meta.env.VITE_WP_URL ?? 'https://szydelko-nie-pyta.pl';
+const BASE_URL = import.meta.env.VITE_WP_URL ?? '';
 const API_URL = `${BASE_URL}/wp-json/wc/store/v1`;
 
 async function apiFetch<T>(path: string): Promise<T> {

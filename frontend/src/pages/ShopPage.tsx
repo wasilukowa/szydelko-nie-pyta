@@ -28,7 +28,7 @@ export function ShopPage() {
   return (
     <div className="shop">
       <div className="shop__header">
-        <h1 className="shop__title">Sklep</h1>
+        <h1 className="shop__title">Produkty</h1>
         <form className="shop__search" onSubmit={handleSearch}>
           <input
             type="text"
@@ -51,7 +51,7 @@ export function ShopPage() {
 
       {!loading && !error && products.length === 0 && (
         <div className="shop__empty">
-          {search ? `Brak wyników dla "${search}"` : 'Brak produktów w sklepie.'}
+          {search ? `Brak wyników dla "${search}"` : 'Brak produktów.'}
         </div>
       )}
 

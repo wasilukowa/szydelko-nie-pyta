@@ -5,4 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  server: {
+    proxy: {
+      '/wp-json': {
+        target: 'https://szydelko-nie-pyta.pl/sklep',
+        changeOrigin: true,
+        secure: true,
+      },
+    },
+  },
 })

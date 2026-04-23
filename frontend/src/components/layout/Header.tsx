@@ -40,7 +40,7 @@ export function Header() {
         </div>
 
         <nav className={`header__nav${menuOpen ? ' header__nav--open' : ''}`}>
-          <span className="header__link header__link--disabled">Sklep</span>
+          <Link to="/produkty" className="header__link" onClick={() => setMenuOpen(false)}>Produkty</Link>
           <span className="header__link header__link--disabled">Zrobię dla Ciebie</span>
           <span className="header__link header__link--disabled">Galeria</span>
           <a href="https://www.facebook.com/profile.php?id=61581252330329" target="_blank" rel="noopener noreferrer" className="header__link">FB</a>

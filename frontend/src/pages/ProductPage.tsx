@@ -34,7 +34,7 @@ export function ProductPage() {
   if (error || !product) return (
     <div className="product-page__error">
       <p>{error ?? 'Produkt nie znaleziony'}</p>
-      <Link to="/sklep" className="product-page__back">← Wróć do sklepu</Link>
+      <Link to="/produkty" className="product-page__back">← Wróć do produktów</Link>
     </div>
   );
 
@@ -42,7 +42,7 @@ export function ProductPage() {
 
   return (
     <div className="product-page">
-      <Link to="/sklep" className="product-page__back">← Wróć do sklepu</Link>
+      <Link to="/produkty" className="product-page__back">← Wróć do produktów</Link>
 
       <div className="product-page__layout">
         <div className="product-page__gallery">

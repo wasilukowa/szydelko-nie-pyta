@@ -7,7 +7,7 @@ export function Footer() {
 
         <div className="footer__columns">
           <div className="footer__col">
-            <h3 className="footer__col-title">Sklep</h3>
+            <h3 className="footer__col-title">Produkty</h3>
             <span className="footer__col-item--disabled">Wszystkie produkty</span>
             <span className="footer__col-item--disabled">Chusty</span>
             <span className="footer__col-item--disabled">Mandale</span>

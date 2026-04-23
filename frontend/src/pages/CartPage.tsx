@@ -10,7 +10,7 @@ export function CartPage() {
     return (
       <div className="cart cart--empty">
         <p>Twój koszyk jest pusty.</p>
-        <Link to="/sklep" className="cart__continue">Przejdź do sklepu →</Link>
+        <Link to="/produkty" className="cart__continue">Przejdź do produktów →</Link>
       </div>
     );
   }
@@ -72,7 +72,7 @@ export function CartPage() {
           <a href={getCheckoutUrl()} className="cart__checkout-btn">
             Przejdź do kasy
           </a>
-          <Link to="/sklep" className="cart__continue">← Kontynuuj zakupy</Link>
+          <Link to="/produkty" className="cart__continue">← Kontynuuj zakupy</Link>
         </div>
       </div>
     </div>

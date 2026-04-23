@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
+import { PasswordGate } from './components/PasswordGate';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/HomePage';
@@ -30,12 +31,13 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
+    <PasswordGate>
     <CartProvider>
       <BrowserRouter>
         <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/sklep" element={<ShopPage />} />
+            <Route path="/produkty" element={<ShopPage />} />
             <Route path="/produkt/:slug" element={<ProductPage />} />
             <Route path="/koszyk" element={<CartPage />} />
             <Route path="/kontakt" element={<ContactPage />} />
@@ -44,5 +46,6 @@ export default function App() {
         </Layout>
       </BrowserRouter>
     </CartProvider>
+    </PasswordGate>
   );
 }
